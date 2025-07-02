@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+# ProgressPal
+Ever wanted a simple and secure place to store and track your gym progress photos?  
+**ProgressPal** lets you easily upload, organize, and review your progress pictures — all in one sleek React Native app.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Built with Expo Router, ProgressPal offers customizable themes that you can select and save, making your experience truly personal. Your theme preferences persist across app launches thanks to AsyncStorage.
 
-## Get started
+> **Note:** This app is currently targeted for **iOS devices only** and works seamlessly with the Expo Go app.
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- Upload progress pictures and data
+- Multiple selectable themes
+- Themes persist between app restarts using AsyncStorage
+- Built with Expo Router for routing
+- Progress images stored on app and persists
 
-   ```bash
-   npx expo start
-   ```
+## Getting Started
 
-In the output, you'll find options to open the app in a
+These instructions will get you a copy of the project running on your local device using Expo Go.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Prerequisites
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+- Node.js installed (https://nodejs.org/)
+- Expo CLI installed globally (optional but recommended):
 
 ```bash
-npm run reset-project
+npm install -g expo-cli
+Expo Go app installed on your iOS or Android device (available on App Store / Google Play)
+```
+# Installation
+1. Clone the repository
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Running the App
+1 Start the Expo development server
 
-## Learn more
+```bash
+npx expo start
+# or if you have expo-cli installed globally
+expo start
+```
+2. Open the Expo Go app on your device.
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Scan the QR code displayed in your terminal or browser.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Troubleshooting
+- If the app doesn’t load, make sure your device and development machine are on the same network.
+- Restart the Expo server if needed with expo start -c to clear cache.
+- If the app takes too long to load, try
+  ```bash
+  npx expo start --tunnel
+  ```
